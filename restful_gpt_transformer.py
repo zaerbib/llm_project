@@ -41,7 +41,7 @@ def translate_french_to_english(text):
 
 	return translated_text
 
-@app.post("/translate", response_model=TranslationResponse)
+@app.post("/translate/en/fr", response_model=TranslationResponse)
 def translate(request: TranslationRequest):
     try:
         # Perform the translation
